@@ -19,9 +19,8 @@
 //   typst compile --input email=... --input phone=... resume.typ
 // See build-private.sh (gitignored).
 #let themeColor = rgb("#25A269")
-
-// #let privateEmail = sys.inputs.at("email", default: "timothyemail805@gmail.com")
-// #let privatePhone = sys.inputs.at("phone", default: "647-563-6728")
+#let privateEmail = sys.inputs.at("email", default: "email@example.com")
+#let privatePhone = sys.inputs.at("phone", default: none)
 
 #show: project.with(
   theme: themeColor,
@@ -40,10 +39,10 @@
       link: "https://ttiimmothy.com"
     ),
     contact(
-      text: "timothyemail805@gmail.com",
-      link: "mailto: timothyemail805@gmail.com"
+      text: privateEmail,
+      link: "mailto:" + privateEmail
     ),
-    contact(text: "647-563-6728", link: "0"),
+    contact(text: privatePhone, link: "tel: " + privatePhone),
   ),
   main: (
     section(
