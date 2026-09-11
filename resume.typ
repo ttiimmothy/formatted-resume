@@ -43,7 +43,7 @@
       text: "timothyemail805@gmail.com",
       link: "mailto: timothyemail805@gmail.com"
     ),
-    contact(text: "647-563-6728", link: ""),
+    contact(text: "647-563-6728", link: "0"),
   ),
   main: (
     section(
