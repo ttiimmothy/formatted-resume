@@ -1,0 +1,10 @@
+.direnv
+resume.pdf
+.DS_Store
+
+# Generated PDFs carry personal contact details (email, phone) — never commit.
+*.pdf
+Resume Typst.pdf
+
+# Local build script holding personal contact details.
+build-private.sh
