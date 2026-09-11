@@ -147,7 +147,7 @@
           *Frameworks*:  React, Next.js, Redux, Vue, Angular, Node.js, Express, NestJS, Django, Spring Boot, .NET, GraphQL, RESTful APIs\
           *Data*:  PostgreSQL, MySQL, MongoDB, Redis, Apache Kafka, SQL optimization, indexing, transactions\
           *Cloud & DevOps*:  AWS (Lambda, S3, EC2), Docker, Kubernetes, Terraform, GitHub Actions, GitLab CI, Azure DevOps, GCP\
-          *AI/ML*:  Claude API, Perplexity, prompt engineering, RAG context engineering, TensorFlow, scikit-learn],
+          *AI/ML*:  Claude Code, Perplexity, prompt engineering, RAG context engineering, TensorFlow, scikit-learn],
         ),
       ),
     )
