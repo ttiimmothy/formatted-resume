@@ -1,6 +1,6 @@
 name: build resume
 
-on: push, working_dispatch
+on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
