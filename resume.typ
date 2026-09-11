@@ -9,7 +9,7 @@
   ),
 )
 
-#set text(font: "Mulish", size: 9.5pt)
+#set text(font: "Mulish", size: 9.2pt)
 
 // Spacing tuning: fills one page with top and bottom whitespace balanced.
 #set par(leading: 0.7em, spacing: 0.78em)
@@ -50,7 +50,7 @@
       content: (
         subSection(
           summary: [
-            Full-stack software engineer with 5+ years building web, mobile, and cloud systems in React, Node.js, .NET, and Python. I specialize in automation and DevOps: shipped AI-assisted workflows for enterprise proposals and led CI/CD + AWS migrations that cut costs and delivery time by double-digit percentages. I write code test-first and push it to production through reliable pipelines.
+            *Full-stack software engineer* with 5+ years building web, mobile, and cloud systems in *React, Node.js, .NET, and Python*. I specialize in automation and *DevOps*: shipped AI-assisted workflows for enterprise proposals and led CI/CD + AWS migrations that cut costs and delivery time by double-digit percentages. I write code test-first and push it to production through reliable pipelines.
           ],
         ),
       ),
@@ -64,9 +64,9 @@
           subTitle: "Software Engineer",
           subTitleEnd: "Toronto, ON",
           content: list(
-            [Led the CloudCheckr deliverable for the OECM program, coordinating product, vendors, and the client to ship on time and cutting project turnaround by 20%.],
-            [Built an AI-powered RFP response system using Claude for document extraction and context engineering with role and persona configuration, raising bid win rate by 20%.],
-            [Integrated Claude and Perplexity retrieval into a governed context-engineering workflow to keep generated proposals grounded in source documents.],
+            [*Led the CloudCheckr deliverable* for the OECM program, coordinating product, vendors, and the client to ship on time and cut project turnaround by 20%.],
+            [*Built an AI-powered RFP response system* using Claude for document extraction and context engineering with role and persona configuration, raising bid win rate by 20%.],
+            [Integrated *Claude and Perplexity retrieval* into a governed context-engineering workflow to keep generated proposals grounded in source documents.],
           ),
         ),
         subSection(
@@ -76,9 +76,10 @@
           subTitleEnd: "Toronto, ON",
           content: [
             #list(
-              [Spearheaded a React web app through Azure Boards, improving ticket handling and raising customer satisfaction by 30%.],
-              [Rewrote stored-procedure SQL to speed the retail dashboard's store-auditing page by 90% and overall query loading by 100%+.],
-              [Built core Xamarin components and migrated an existing app to React Native and introduced unit testing to support CI/CD.],
+              [Spearheaded *a React web app* through Azure Boards, improving ticket handling and raising customer satisfaction by 30%.],
+              [*Rewrote stored-procedure SQL* to speed the retail dashboard's store-auditing page by 90% and overall query loading by 100%+.],
+              [*Added filtering and employee-borrowing features* to the retail dashboard and worked with backend/DevOps on headless APIs and daily agile releases],
+              [*Built core Xamarin components* and migrated an existing app to React Native and introduced unit testing to support CI/CD.],
             )
           ],
         ),
@@ -87,10 +88,10 @@
           titleEnd: "Sep 2021 - Jun 2022",
           subTitle: "Software Developer",
           content: list(
-            [Architected a microservices migration with Docker that supported 1M+ user visits.],
-            [Designed and launched a new company website with Figma + Next.js and deployed on AWS, improving SEO tracking accuracy by 60%.],
-            [Rebuilt the mobile app in React Native + GraphQL, increasing data-customization for rendering by 80% and revenue by 20%.],
-            [Migrated workloads from SFTP to AWS and introduced CI/CD, cutting operational costs by 20%, and boosted data-processing speed by 35% via SQL indexing, transactions, and constraints.],
+            [*Architected a microservices migration* with Docker that supported 1M+ user visits.],
+            [*Designed and launched a new company website* with Figma + Next.js and deployed on AWS, improving SEO tracking accuracy by 60%.],
+            [*Rebuilt the mobile app* in React Native + GraphQL, increasing data-customization for rendering by 80% and revenue by 20%.],
+            [*Migrated workloads from SFTP to AWS* and introduced CI/CD, cutting operational costs by 20%, and boosted data-processing speed by 35% via SQL indexing, transactions, and constraints.],
           ),
         ),
         subSection(
@@ -98,9 +99,9 @@
           titleEnd: "Jun 2021 - Aug 2021",
           subTitle: "Backend Engineer",
           content: list(
-            [Cut CMS search query time by 40% by optimizing SQL and resolved Unicode issues across the e-commerce CMS.],
-            [Shipped a weekly-shipment Slack notification to track stock capacity.],
-            [Diagnosed and fixed high-traffic server issues, reducing downtime by 30%.],
+            [*Cut CMS search query time by 40%* by optimizing SQL and resolved Unicode issues across the e-commerce CMS.],
+            [*Shipped a weekly-shipment Slack notification* to track stock capacity.],
+            [*Diagnosed and fixed high-traffic server issues*, reducing downtime by 30%.],
           ),
         ),
       ),

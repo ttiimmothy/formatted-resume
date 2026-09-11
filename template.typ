@@ -30,7 +30,7 @@
   }
 
   let secondaryTitle(content) = {
-    text(weight: "bold", size: 1.125em, content)
+    text(weight: "bold", size: 1.25em, content)
   }
 
   let summaryContent(content) = {
