@@ -56,7 +56,7 @@
       ),
     ),
     section(
-      title: "Experience",
+      title: "Work Experience",
       content: (
         subSection(
           title: "Computacenter",
