@@ -9,7 +9,7 @@
   ),
 )
 
-#set text(font: "Mulish", size: 9.2pt)
+#set text(font: "Mulish", size: 9.1pt)
 
 // Spacing tuning: fills one page with top and bottom whitespace balanced.
 #set par(leading: 0.7em, spacing: 0.78em)
