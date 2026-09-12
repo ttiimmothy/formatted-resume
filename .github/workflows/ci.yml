@@ -1,0 +1,25 @@
+name: build resume
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7.0.1
+    - name: "Setup env"
+      uses: JRMurr/direnv-nix-action@v4.2.0
+    
+    - name: use typst
+      run: typst --version
+      shell: bash
+
+    - name: build resume
+      run: ./build.sh
+      shell: bash
+      
+    - name: upload artifact
+      uses: actions/upload-artifact@v7.0.1
+      with:
+        name: Resume
+        path: resume.pdf
+        if-no-files-found: error
