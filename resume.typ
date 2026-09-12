@@ -76,7 +76,7 @@
           subTitleEnd: "Toronto, ON",
           content: [
             #list(
-              [Spearheaded *a React web app* through Azure Boards, improving ticket handling and raising customer satisfaction by 30%.],
+              [Spearheaded *a React web application* through Azure Boards, improving ticket handling and raising customer satisfaction by 30%.],
               [*Rewrote stored-procedure SQL* to speed the retail dashboard's store-auditing page by 90% and overall query loading by 100%+.],
               [*Added filtering and employee-borrowing features* to the retail dashboard and worked with backend/DevOps on headless APIs and daily agile releases],
               [*Built core Xamarin components* and migrated an existing app to React Native and introduced unit testing to support CI/CD.],
@@ -134,7 +134,7 @@
         subSection(
           title: "TTC ETA Tracker",
           content: list(
-            [A web application for users to check the TTC (Toronto Transit Commission) estimated time arrival.],
+            [Engineered a web application for users to check TTC estimated arrival times with React and Redux.],
           ),
         ),
       ),
