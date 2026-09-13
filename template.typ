@@ -1,5 +1,5 @@
-#let contact(text: "", link: none) = {
-  (text: text, link: link)
+#let contact(icon:none, text: none, link: none) = {
+  (icon:icon, text: text, link: link)
 }
 
 #let subSection(title: none, titleEnd: none, subTitle: none, subTitleEnd: none, content: none, summary: none) = {
@@ -38,18 +38,25 @@
   }
 
   let italicColorTitle(content) = {
-    text(weight: "bold", style: "italic", size: 1.125em, theme, content)
+    text(weight: "bold", style: "italic", theme, content)
   }
-
 
   let formattedName = block(text(2.5em, weight: "bold", theme, name))
 
   let contactLine = contact.map(c => {
-    if c.link == none [
-      #c.text
-    ] else [
-      #link(c.link, text(theme, c.text))
-    ]
+    if c.link == none {
+      if c.icon == none [
+        #c.text
+      ] else [
+        #c.icon #c.text
+      ]
+    } else {
+      if c.icon == none [
+        #link(c.link, text(theme, c.text))
+      ] else [
+        #link(c.link)[#text(size: 1.25em, theme, c.icon) #h(0.3em) #text(theme, c.text)]
+      ]
+    }
   }).join("  ")
 
   align(center)[
@@ -75,10 +82,12 @@
   let parseSubSections(subSections) = {
     subSections.map(s => {
       [
-        #createLeftRight(
-          left: secondaryTitle(s.title),
-          right: s.titleEnd
-        )
+        #if s.title != none or s.titleEnd != none [
+          #createLeftRight(
+            left: secondaryTitle(s.title),
+            right: text(size: 1.1em, s.titleEnd)
+          )
+        ]
         #if s.subTitle != none or s.subTitleEnd != none [
           #text(
             top-edge: 0.6em,
@@ -104,8 +113,7 @@
   }
 
   let mainSection = parseSection(main)
-  let sidebarSection = parseSection(sidebar)
-
+  // let sidebarSection = parseSection(sidebar)
 
   mainSection
 }

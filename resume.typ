@@ -1,4 +1,5 @@
 #import "template.typ": *
+#import "@preview/fontawesome:0.5.0": *
 
 #set page(
   margin: (
@@ -27,22 +28,32 @@
   name: "Timothy Li",
   contact: (
     contact(
+      icon: fa-icon("linkedin"),
       text: "linkedIn://timothyurl",
       link: "https://www.linkedin.com/in/timothyurl"
     ),
     contact(
+      icon: fa-icon("github"),
       text: "github://ttiimmothy",
       link: "https://www.github.com/ttiimmothy"
     ),
     contact(
+      icon: fa-icon("link"),
       text: "ttiimmothy.com",
       link: "https://ttiimmothy.com"
     ),
     contact(
+      icon: fa-icon("envelope"),
       text: privateEmail,
       link: "mailto:" + privateEmail
     ),
-    contact(text: privatePhone, link: "tel: " + privatePhone),
+    ..if privatePhone != none {
+      (contact(
+        icon: fa-icon("phone"), 
+        text: privatePhone, 
+        link: "tel: " + privatePhone
+      ),)
+    } else { () }
   ),
   main: (
     section(
