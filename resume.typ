@@ -60,7 +60,7 @@
       title: "Summary",
       content: (
         subSection(
-          summary: [
+          content: [
             *Full-stack software engineer* with 5+ years building web, mobile, and cloud systems in *React, Node.js, .NET, and Python*. I specialize in automation and *DevOps*: shipped AI-assisted workflows for enterprise proposals and led CI/CD + AWS migrations that cut costs and delivery time by double-digit percentages. I write code test-first and push it to production through reliable pipelines.
           ],
         ),

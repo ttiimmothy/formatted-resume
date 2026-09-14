@@ -33,10 +33,6 @@
     text(weight: "bold", size: 1.25em, content)
   }
 
-  let summaryContent(content) = {
-    text(size: 1.1em, content)
-  }
-
   let italicColorTitle(content) = {
     text(weight: "bold", style: "italic", theme, content)
   }
@@ -98,7 +94,6 @@
           )
         ]
         #s.content
-        #summaryContent(s.summary)
       ]
     }).join()
   }
